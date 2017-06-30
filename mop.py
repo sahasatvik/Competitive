@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-# mop.py displays the shortest string of multiplication signs (x's), ones (1's)
-# and plusses (+'s) that evaluate to a number passed to it.
-#
+# Displays the shortest string of multiplication signs (x's), ones (1's)
+# and plusses (+'s) that evaluates to the number passed to it.
+
 # Usage : ./mop.py [number]
 
 import sys
