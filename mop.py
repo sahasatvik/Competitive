@@ -17,7 +17,7 @@ def mop_exp(n):
             return '(' + ones(i) + ') x (' + mop_exp(n / i) + ')'
     return '1 + ' + mop_exp(n - 1)      # recurse by pulling out a one (1)
 
-def ones(n):                            # generate a string of ones (1's) with each other
+def ones(n):                            # generate a string of ones (1's) added with each other
     return '1' + (' + 1' * (n - 1))
 
 def count_ones(s):                      # count the number of ones (1's) in a string
