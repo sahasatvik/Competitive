@@ -24,4 +24,4 @@ for n in xrange(lo, hi):
     sp = sum(map(sum_digits, f))
     if len(f) > 1 and sd == sp:
         fm = '{:>' + str(len(str(hi))) + 'd} : {}'
-        print fm.format(n, ', '.join([str(x) for x in f]))
+        print fm.format(n, ', '.join(str(x) for x in f))
