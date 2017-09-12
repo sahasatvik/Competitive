@@ -1,3 +1,3 @@
 # Competitive Programming Puzzles
 
-This repository contains some interesting puzzles, which I had fun coding.
+This repository contains solutions to some interesting puzzles, which I had fun coding.
