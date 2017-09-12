@@ -17,13 +17,14 @@ def primes(n):
                 p[multiple] = False
 
 def factorize(n):
-    if n == 1:
-        return []
+    f = []
     for prime in primes(n):
-        qt, rm = divmod(n, prime)
-        if not rm:
-            return [prime] + factorize(qt)
-    return [n]
+        while not (n % prime):
+            f += [prime]
+            n /= prime
+        if n == 1:
+            break
+    return f
 
 if __name__ == '__main__':
     n = int(sys.argv[1])
