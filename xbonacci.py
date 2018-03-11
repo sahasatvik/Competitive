@@ -16,6 +16,7 @@ def xb_seq(elements, x, l):                 # returns a list of numbers in the s
         return elements                     # base case
     return xb_seq(elements + [sum(elements[-x:])], x, l - 1)
 
-n = int(sys.argv[1])                        # get cli arguments
-nums = map(int, sys.argv[2:])
-print xbonacci(nums, n)
+if __name__ == '__main__':
+    n = int(sys.argv[1])                    # get cli arguments
+    nums = map(int, sys.argv[2:])
+    print xbonacci(nums, n)
