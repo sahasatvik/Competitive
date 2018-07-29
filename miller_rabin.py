@@ -36,4 +36,7 @@ def is_prime_miller(n, k=10):
     return True
 
 if __name__ == '__main__':
-    print is_prime_miller(int(sys.argv[1]), int(sys.argv[2]))
+    if len(sys.argv) > 2:
+        print is_prime_miller(int(sys.argv[1]), int(sys.argv[2]))
+    else:
+        print is_prime_miller(int(sys.argv[1]))

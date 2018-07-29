@@ -13,4 +13,7 @@ def left_truncatable_primes(n):
             left_truncatable_primes(d + n)
 
 if __name__ == '__main__':
-    left_truncatable_primes(sys.argv[1])
+    if len(sys.argv) > 1:
+        left_truncatable_primes(sys.argv[1])
+    else:
+        left_truncatable_primes('')
